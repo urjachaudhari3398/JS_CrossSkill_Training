@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="icon"
+      href="https://blog.q-bit.me/content/images/2022/06/Javascript_Logo.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Js Fundamentals</title>
+  </head>
+  <body>
+    <h2>Assignment 1</h2>
+    <span id="test">Hello World!</span>
+    <br />
+    <h2>Assignment 9</h2>
+    <div class="assignment09">
+      <h3>
+        Visit any page on the browser, and replace the content of all the p tags
+        with the phrase “How’s the Josh?” using Javascript
+      </h3>
+      <p class="question1">Inside Assignment 09 div</p>
+    </div>
+    <p class="question1">Outside Assignment 09 div</p>
+    <br />
+    <h3>Create a form to submit a blog to a mock API</h3>
+    <div class="question2" style="width: 50vh">
+      <form id="blogForm">
+        <div style="display: flex; flex-direction: column; margin-bottom: 5px">
+          <label>Title</label>
+          <input type="text" id="title" name="title" required />
+          <label>Content</label>
+          <textarea type="text" id="content" name="content" required></textarea>
+        </div>
+        <button>Submit</button>
+        <br />
+        <span id="successMessage" style="display: none"
+          >Blog submitted successfully!</span
+        >
+        <span id="notSuccessMessage" style="display: none"
+          >Blog post unsuccessful!</span
+        >
+      </form>
+    </div>
+    <br />
+    <h3>
+      Create a blog list page that fetches a list of users from a mock API and
+      adds them to a table on the page after loading.
+    </h3>
+    <div class="question3">
+      <div id="usersData">
+        <div style="display: flex; justify-content: space-between; width: 60%">
+          <input placeholder="Search User" id="searchInput" />
+          <button id="searchUser">Search</button>
+          <button id="sortButton">
+            <span style="display: flex; justify-content: space-between">
+              Sort by Name
+              <span id="sortAsc"> 🔻</span>
+              <span id="sortDesc"> 🔺</span>
+            </span>
+          </button>
+        </div>
+
+        <br />
+        <table style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <span id="isLoading">Loading...</span>
+    </div>
+    <script src="assignments/assignment01.js"></script>
+    <script src="assignments/assignment09.js"></script>
+
+    <!-- edit this src-->
+    <script src="assignments/assignment07b.js"></script>
+  </body>
+</html>
